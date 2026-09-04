@@ -1,0 +1,31 @@
+# Nothing under assets/ is needed to run the game. Every texture and sprite
+# sheet the engine actually uses is embedded as a data URI in scripts/, which is
+# what lets index.html work straight off the filesystem. assets/ holds the 59MB
+# of intermediate art those embeds were generated *from* - keeping it would make
+# the repo twelve times larger than the thing people came to play.
+#
+# Re-generate it with the tools/ scripts when the art needs to change:
+#   python3 tools/generate_terrain.py both
+#   python3 tools/bake_premium.py
+#   python3 tools/bake_props.py
+#   python3 tools/recolor_sprites.py
+#   python3 tools/wire_sprites.py
+#   python3 tools/embed_textures.py
+assets/
+
+# Pristine pre-grade copies of the sprite sheets. recolor_sprites.py keeps these
+# so re-running it re-grades from the original instead of stacking grade on top
+# of grade; they are derived data, not source.
+*.orig.webp
+*.preview.webp
+*.partial.png
+
+# Build output - reproduce with `python3 tools/bundle.py`
+dist/
+
+# Scratch from the headless harness
+/tmp/
+*.log
+node_modules/
+__pycache__/
+.DS_Store

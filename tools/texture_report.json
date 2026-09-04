@@ -1,0 +1,392 @@
+[
+ {
+  "key": "riftSteel_albedo",
+  "dim": "1024x1024",
+  "size": "121.6KB",
+  "path": "assets/textures/environments/riftSteel_albedo.webp"
+ },
+ {
+  "key": "riftSteel_normal",
+  "dim": "1024x1024",
+  "size": "666.1KB",
+  "path": "assets/textures/environments/riftSteel_normal.png"
+ },
+ {
+  "key": "riftSteel_orm",
+  "dim": "1024x1024",
+  "size": "820.1KB",
+  "path": "assets/textures/environments/riftSteel_orm.png"
+ },
+ {
+  "key": "riftSteel_emissive",
+  "dim": "1024x1024",
+  "size": "22.2KB",
+  "path": "assets/textures/environments/riftSteel_emissive.webp"
+ },
+ {
+  "key": "darkMetal_albedo",
+  "dim": "512x512",
+  "size": "41.6KB",
+  "path": "assets/textures/environments/darkMetal_albedo.webp"
+ },
+ {
+  "key": "darkMetal_normal",
+  "dim": "512x512",
+  "size": "225.2KB",
+  "path": "assets/textures/environments/darkMetal_normal.png"
+ },
+ {
+  "key": "darkMetal_orm",
+  "dim": "512x512",
+  "size": "251.7KB",
+  "path": "assets/textures/environments/darkMetal_orm.png"
+ },
+ {
+  "key": "darkMetal_emissive",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/environments/darkMetal_emissive.webp"
+ },
+ {
+  "key": "cloth_albedo",
+  "dim": "1024x1024",
+  "size": "49.9KB",
+  "path": "assets/textures/player/cloth_albedo.webp"
+ },
+ {
+  "key": "cloth_normal",
+  "dim": "1024x1024",
+  "size": "807.7KB",
+  "path": "assets/textures/player/cloth_normal.png"
+ },
+ {
+  "key": "cloth_orm",
+  "dim": "1024x1024",
+  "size": "92.9KB",
+  "path": "assets/textures/player/cloth_orm.png"
+ },
+ {
+  "key": "cloth_emissive",
+  "dim": "1024x1024",
+  "size": "1.9KB",
+  "path": "assets/textures/player/cloth_emissive.webp"
+ },
+ {
+  "key": "leather_albedo",
+  "dim": "512x512",
+  "size": "15.2KB",
+  "path": "assets/textures/player/leather_albedo.webp"
+ },
+ {
+  "key": "leather_normal",
+  "dim": "512x512",
+  "size": "264.8KB",
+  "path": "assets/textures/player/leather_normal.png"
+ },
+ {
+  "key": "leather_orm",
+  "dim": "512x512",
+  "size": "36.3KB",
+  "path": "assets/textures/player/leather_orm.png"
+ },
+ {
+  "key": "leather_emissive",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/player/leather_emissive.webp"
+ },
+ {
+  "key": "skin_albedo",
+  "dim": "512x512",
+  "size": "8.3KB",
+  "path": "assets/textures/player/skin_albedo.webp"
+ },
+ {
+  "key": "skin_normal",
+  "dim": "512x512",
+  "size": "152.2KB",
+  "path": "assets/textures/player/skin_normal.png"
+ },
+ {
+  "key": "skin_orm",
+  "dim": "512x512",
+  "size": "163.5KB",
+  "path": "assets/textures/player/skin_orm.png"
+ },
+ {
+  "key": "skin_emissive",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/player/skin_emissive.webp"
+ },
+ {
+  "key": "crystalRed_albedo",
+  "dim": "1024x1024",
+  "size": "60.6KB",
+  "path": "assets/textures/player/crystalRed_albedo.webp"
+ },
+ {
+  "key": "crystalRed_normal",
+  "dim": "1024x1024",
+  "size": "470.1KB",
+  "path": "assets/textures/player/crystalRed_normal.png"
+ },
+ {
+  "key": "crystalRed_orm",
+  "dim": "1024x1024",
+  "size": "37.9KB",
+  "path": "assets/textures/player/crystalRed_orm.png"
+ },
+ {
+  "key": "crystalRed_emissive",
+  "dim": "1024x1024",
+  "size": "69.1KB",
+  "path": "assets/textures/player/crystalRed_emissive.webp"
+ },
+ {
+  "key": "circuit_albedo",
+  "dim": "512x512",
+  "size": "5.4KB",
+  "path": "assets/textures/player/circuit_albedo.webp"
+ },
+ {
+  "key": "circuit_normal",
+  "dim": "512x512",
+  "size": "140.7KB",
+  "path": "assets/textures/player/circuit_normal.png"
+ },
+ {
+  "key": "circuit_orm",
+  "dim": "512x512",
+  "size": "3.9KB",
+  "path": "assets/textures/player/circuit_orm.png"
+ },
+ {
+  "key": "circuit_emissive",
+  "dim": "512x512",
+  "size": "13.7KB",
+  "path": "assets/textures/player/circuit_emissive.webp"
+ },
+ {
+  "key": "energyCyan_albedo",
+  "dim": "512x512",
+  "size": "2.1KB",
+  "path": "assets/textures/environments/energyCyan_albedo.webp"
+ },
+ {
+  "key": "energyCyan_normal",
+  "dim": "512x512",
+  "size": "131.6KB",
+  "path": "assets/textures/environments/energyCyan_normal.png"
+ },
+ {
+  "key": "energyCyan_orm",
+  "dim": "512x512",
+  "size": "1.5KB",
+  "path": "assets/textures/environments/energyCyan_orm.png"
+ },
+ {
+  "key": "energyCyan_emissive",
+  "dim": "512x512",
+  "size": "15.5KB",
+  "path": "assets/textures/environments/energyCyan_emissive.webp"
+ },
+ {
+  "key": "stone_albedo",
+  "dim": "1024x1024",
+  "size": "37.2KB",
+  "path": "assets/textures/environments/stone_albedo.webp"
+ },
+ {
+  "key": "stone_normal",
+  "dim": "1024x1024",
+  "size": "611.4KB",
+  "path": "assets/textures/environments/stone_normal.png"
+ },
+ {
+  "key": "stone_orm",
+  "dim": "1024x1024",
+  "size": "274.0KB",
+  "path": "assets/textures/environments/stone_orm.png"
+ },
+ {
+  "key": "stone_emissive",
+  "dim": "1024x1024",
+  "size": "55.6KB",
+  "path": "assets/textures/environments/stone_emissive.webp"
+ },
+ {
+  "key": "organic_albedo",
+  "dim": "512x512",
+  "size": "4.0KB",
+  "path": "assets/textures/enemies/organic_albedo.webp"
+ },
+ {
+  "key": "organic_normal",
+  "dim": "512x512",
+  "size": "252.6KB",
+  "path": "assets/textures/enemies/organic_normal.png"
+ },
+ {
+  "key": "organic_orm",
+  "dim": "512x512",
+  "size": "69.3KB",
+  "path": "assets/textures/enemies/organic_orm.png"
+ },
+ {
+  "key": "organic_emissive",
+  "dim": "512x512",
+  "size": "49.3KB",
+  "path": "assets/textures/enemies/organic_emissive.webp"
+ },
+ {
+  "key": "bossShell_albedo",
+  "dim": "1024x1024",
+  "size": "107.0KB",
+  "path": "assets/textures/boss/bossShell_albedo.webp"
+ },
+ {
+  "key": "bossShell_normal",
+  "dim": "1024x1024",
+  "size": "614.0KB",
+  "path": "assets/textures/boss/bossShell_normal.png"
+ },
+ {
+  "key": "bossShell_orm",
+  "dim": "1024x1024",
+  "size": "738.5KB",
+  "path": "assets/textures/boss/bossShell_orm.png"
+ },
+ {
+  "key": "bossShell_emissive",
+  "dim": "1024x1024",
+  "size": "11.9KB",
+  "path": "assets/textures/boss/bossShell_emissive.webp"
+ },
+ {
+  "key": "bossMetal_albedo",
+  "dim": "512x512",
+  "size": "41.7KB",
+  "path": "assets/textures/boss/bossMetal_albedo.webp"
+ },
+ {
+  "key": "bossMetal_normal",
+  "dim": "512x512",
+  "size": "226.6KB",
+  "path": "assets/textures/boss/bossMetal_normal.png"
+ },
+ {
+  "key": "bossMetal_orm",
+  "dim": "512x512",
+  "size": "226.3KB",
+  "path": "assets/textures/boss/bossMetal_orm.png"
+ },
+ {
+  "key": "bossMetal_emissive",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/boss/bossMetal_emissive.webp"
+ },
+ {
+  "key": "bossCore_albedo",
+  "dim": "512x512",
+  "size": "3.2KB",
+  "path": "assets/textures/boss/bossCore_albedo.webp"
+ },
+ {
+  "key": "bossCore_normal",
+  "dim": "512x512",
+  "size": "130.1KB",
+  "path": "assets/textures/boss/bossCore_normal.png"
+ },
+ {
+  "key": "bossCore_orm",
+  "dim": "512x512",
+  "size": "1.5KB",
+  "path": "assets/textures/boss/bossCore_orm.png"
+ },
+ {
+  "key": "bossCore_emissive",
+  "dim": "512x512",
+  "size": "13.0KB",
+  "path": "assets/textures/boss/bossCore_emissive.webp"
+ },
+ {
+  "key": "magenta_albedo",
+  "dim": "512x512",
+  "size": "1.9KB",
+  "path": "assets/textures/enemies/magenta_albedo.webp"
+ },
+ {
+  "key": "magenta_normal",
+  "dim": "512x512",
+  "size": "130.9KB",
+  "path": "assets/textures/enemies/magenta_normal.png"
+ },
+ {
+  "key": "magenta_orm",
+  "dim": "512x512",
+  "size": "1.5KB",
+  "path": "assets/textures/enemies/magenta_orm.png"
+ },
+ {
+  "key": "magenta_emissive",
+  "dim": "512x512",
+  "size": "12.1KB",
+  "path": "assets/textures/enemies/magenta_emissive.webp"
+ },
+ {
+  "key": "chainMetal_albedo",
+  "dim": "512x512",
+  "size": "35.9KB",
+  "path": "assets/textures/weapons/chainMetal_albedo.webp"
+ },
+ {
+  "key": "chainMetal_normal",
+  "dim": "512x512",
+  "size": "214.9KB",
+  "path": "assets/textures/weapons/chainMetal_normal.png"
+ },
+ {
+  "key": "chainMetal_orm",
+  "dim": "512x512",
+  "size": "243.6KB",
+  "path": "assets/textures/weapons/chainMetal_orm.png"
+ },
+ {
+  "key": "chainMetal_emissive",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/weapons/chainMetal_emissive.webp"
+ },
+ {
+  "key": "ui_panel",
+  "dim": "512x512",
+  "size": "29.9KB",
+  "path": "assets/textures/ui/panel_albedo.webp"
+ },
+ {
+  "key": "ui_panelNormal",
+  "dim": "512x512",
+  "size": "191.7KB",
+  "path": "assets/textures/ui/panel_normal.png"
+ },
+ {
+  "key": "ui_panelOrm",
+  "dim": "512x512",
+  "size": "1.5KB",
+  "path": "assets/textures/ui/panel_orm.png"
+ },
+ {
+  "key": "ui_panelEmis",
+  "dim": "512x512",
+  "size": "0.5KB",
+  "path": "assets/textures/ui/panel_emissive.webp"
+ },
+ {
+  "key": "ui_icons",
+  "dim": "512x512",
+  "size": "6.1KB",
+  "path": "assets/textures/ui/icons.png"
+ }
+]

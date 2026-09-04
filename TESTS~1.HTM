@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ECHOHEART 자체 테스트</title>
+<link rel="stylesheet" href="styles/game.css">
+<style>
+  html,body{overflow:auto;position:static;height:auto;}
+  .report{max-width:900px;margin:24px auto;padding:0 16px 60px;}
+  .sum{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0 22px;}
+  .chip{padding:10px 18px;border-radius:10px;border:1px solid rgba(79,227,240,.35);
+    background:linear-gradient(180deg,#141e28,#0a1017);font-weight:700;font-size:15px;}
+  .chip.pass{border-color:rgba(110,240,168,.6);color:#6ef0a8;}
+  .chip.fail{border-color:rgba(255,74,94,.6);color:#ff4a5e;}
+  .t{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border-radius:8px;margin-bottom:5px;
+    background:rgba(255,255,255,.03);border-left:3px solid #6ef0a8;font-size:14px;}
+  .t.bad{border-left-color:#ff4a5e;background:rgba(255,74,94,.09);}
+  .t .st{font-weight:800;min-width:52px;}
+  .t .st.ok{color:#6ef0a8;} .t .st.no{color:#ff4a5e;}
+  .t .ex{color:var(--text-dim);font-size:12.5px;margin-top:3px;}
+  #hostUI{position:fixed;left:-9999px;top:0;width:800px;height:600px;}
+</style>
+</head>
+<body>
+<div class="report">
+  <h1 class="title" style="font-size:30px;">ECHOHEART 자체 테스트</h1>
+  <p class="small" style="text-align:center">tests.html 을 그대로 열면(file://) 실행됩니다. 콘솔에서 <code>EchoHeart.runSelfTest()</code> 로도 실행할 수 있습니다.</p>
+  <div class="sum" id="sum"><div class="chip">실행 중...</div></div>
+  <div id="list"></div>
+</div>
+
+<!-- offscreen UI host so screen/button tests can run -->
+<div id="hostUI">
+  <div id="overlay"></div><div id="hud"></div><div id="toast"></div><div id="hint"></div>
+  <div id="combo"></div><div id="portrait"></div><div id="bossBar"></div>
+  <div id="hpFill"></div><div id="hpText"></div><div id="ultFill"></div><div id="cores"></div>
+  <div id="roomInfo"></div><div id="shards"></div><div id="bossFill"></div>
+  <div id="bossName"></div><div id="bossPhase"></div><div id="joyBase"></div><div id="joyKnob"></div>
+  <div id="btnAttack"></div><div id="btnDash"></div><div id="btnSkill"></div><div id="btnUlt"></div>
+  <div id="btnPause"></div>
+</div>
+
+<script src="scripts/namespace.js" defer></script>
+<script src="scripts/config.js" defer></script>
+<script src="scripts/math.js" defer></script>
+<script src="scripts/rng.js" defer></script>
+<script src="scripts/asset-manifest.js" defer></script>
+<script src="scripts/texture-data.js" defer></script>
+<script src="scripts/texture-loader.js" defer></script>
+<script src="scripts/mesh-data-player.js" defer></script>
+<script src="scripts/mesh-data-enemies.js" defer></script>
+<script src="scripts/mesh-data-boss.js" defer></script>
+<script src="scripts/mesh-data-weapons.js" defer></script>
+<script src="scripts/mesh-data-environments.js" defer></script>
+<script src="scripts/mesh-data-imported.js" defer></script>
+<script src="scripts/imported-materials.js" defer></script>
+<script src="scripts/sprite-view.js" defer></script>
+<script src="scripts/sprite-imported.js" defer></script>
+<script src="scripts/shaders.js" defer></script>
+<script src="scripts/renderer.js" defer></script>
+<script src="scripts/animation.js" defer></script>
+<script src="scripts/camera.js" defer></script>
+<script src="scripts/audio.js" defer></script>
+<script src="scripts/save.js" defer></script>
+<script src="scripts/input.js" defer></script>
+<script src="scripts/progression.js" defer></script>
+<script src="scripts/ui.js" defer></script>
+<script src="scripts/entities.js" defer></script>
+<script src="scripts/combat.js" defer></script>
+<script src="scripts/rooms.js" defer></script>
+<script src="scripts/scenes.js" defer></script>
+<script src="scripts/selftest.js" defer></script>
+<script defer>
+(function () {
+  function render(sum) {
+    var list = document.getElementById('list'), s = document.getElementById('sum');
+    s.innerHTML = '';
+    function chip(txt, cls) { var d = document.createElement('div'); d.className = 'chip ' + (cls || ''); d.textContent = txt; s.appendChild(d); }
+    chip('전체 ' + sum.total);
+    chip('통과 ' + sum.passed, 'pass');
+    chip('실패 ' + sum.failed, sum.failed ? 'fail' : 'pass');
+    list.innerHTML = '';
+    sum.results.forEach(function (r) {
+      var d = document.createElement('div');
+      d.className = 't' + (r.ok ? '' : ' bad');
+      var st = document.createElement('div');
+      st.className = 'st ' + (r.ok ? 'ok' : 'no');
+      st.textContent = r.ok ? 'PASS' : 'FAIL';
+      var body = document.createElement('div');
+      body.textContent = r.name;
+      if (r.extra) { var e = document.createElement('div'); e.className = 'ex'; e.textContent = r.extra; body.appendChild(e); }
+      d.appendChild(st); d.appendChild(body); list.appendChild(d);
+    });
+  }
+  function start() {
+    var EH = window.EchoHeart;
+    if (!EH || !EH.SelfTest) { setTimeout(start, 60); return; }
+    EH.Save.load();
+    EH.runSelfTest = function () { return EH.SelfTest.run(render); };
+    var sync = EH.SelfTest.run(function (sum) { render(sum); });
+    render(sync);   // show sync results immediately; async texture tests update after
+  }
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+{
+ "total": 89,
+ "passed": 89,
+ "failed": 0,
+ "drawCalls": 429414,
+ "results": [
+  {
+   "name": "EchoHeart namespace built",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "all 32 scripts executed without throwing",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "renderer initialised (WebGL2)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "all shader programs linked",
+   "ok": true,
+   "extra": "7 progs: pbr,unlit,sky,part,bright,blur,composite"
+  },
+  {
+   "name": "all meshes uploaded to GPU",
+   "ok": true,
+   "extra": "20/20"
+  },
+  {
+   "name": "every material got a real texture (not the white fallback)",
+   "ok": true,
+   "extra": "16 materials"
+  },
+  {
+   "name": "embedded texture pack present for file://",
+   "ok": true,
+   "extra": "76 embedded"
+  },
+  {
+   "name": "game started (title)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "hub is a 3D scene with devices",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "hub renders draw calls",
+   "ok": true,
+   "extra": "1470 calls"
+  },
+  {
+   "name": "player moves in hub",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "run started, room 1 is combat",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "first room always combat",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "enemies spawned in room 1",
+   "ok": true,
+   "extra": "2 enemies"
+  },
+  {
+   "name": "enemies are real 3D meshes",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "melee attack damages an enemy",
+   "ok": true,
+   "extra": "hp 34 -> -20"
+  },
+  {
+   "name": "hit feedback: particles spawned",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "ult charges from hitting",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "dash triggers and sets cooldown",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "skill triggers and sets cooldown",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "bow fires 3D projectiles",
+   "ok": true,
+   "extra": "shots=2"
+  },
+  {
+   "name": "room cleared -> echo reward screen",
+   "ok": true,
+   "extra": "screen=reward"
+  },
+  {
+   "name": "reward offers 3 distinct echoes",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "echo applied to live stats",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "next-room choice screen shown",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "reached the boss room",
+   "ok": true,
+   "extra": "roomIndex=6"
+  },
+  {
+   "name": "boss spawned as a 3D mesh",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "boss intro completed",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "boss transitions through 3 phases",
+   "ok": true,
+   "extra": "phases=0,1,2"
+  },
+  {
+   "name": "boss attacks are telegraphed",
+   "ok": true,
+   "extra": "ring"
+  },
+  {
+   "name": "telegraphs stay under the readability cap",
+   "ok": true,
+   "extra": "cap=3"
+  },
+  {
+   "name": "life core consumed on lethal hit",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "revive restores 50% max HP",
+   "ok": true,
+   "extra": "hp=59.0"
+  },
+  {
+   "name": "revive grants i-frames",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "i-frames block damage",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "boss death fires exactly once",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "victory screen shown",
+   "ok": true,
+   "extra": "screen=victory"
+  },
+  {
+   "name": "win recorded once",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "crystals awarded on victory",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "abyss unlocked after first win",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "abyss tier raised",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "player death triggers once",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "game over screen shown",
+   "ok": true,
+   "extra": "screen=gameOver"
+  },
+  {
+   "name": "death counted once",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "projectile adaptation gained",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "crystals granted even on death",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "meta upgrade raises max HP",
+   "ok": true,
+   "extra": "100 -> 112"
+  },
+  {
+   "name": "next run uses upgraded stats",
+   "ok": true,
+   "extra": "112 vs 112"
+  },
+  {
+   "name": "adaptation reduces projectile damage next run",
+   "ok": true,
+   "extra": "100 -> 96.0"
+  },
+  {
+   "name": "save export/import round trip",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "corrupt save handled gracefully",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "pause screen opens",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "simulation frozen while paused",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "frames rendered without error",
+   "ok": true,
+   "extra": "200815 draw calls"
+  },
+  {
+   "name": "no NaN in camera matrices",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "player rig stands on the floor (not collapsed)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "지연 타이머: 일시정지 중 발동 안 함",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "지연 타이머: 재개 후 발동",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "지연 타이머: 새 런 시작 시 이전 타이머 폐기",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "지연 타이머: 콜백 예외가 루프를 죽이지 않음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "아레나 경계: 대각선 대시로도 원형 벽을 벗어나지 않음",
+   "ok": true,
+   "extra": "maxR=8.58 limit=8.60"
+  },
+  {
+   "name": "아레나 경계: 극단적 넉백에도 갇힘",
+   "ok": true,
+   "extra": "r=8.58"
+  },
+  {
+   "name": "아레나 경계: 적도 원형 안으로 수렴",
+   "ok": true,
+   "extra": "eMax=8.55"
+  },
+  {
+   "name": "드로우콜 예산: 최악 상황에서도 150 이하",
+   "ok": true,
+   "extra": "peak=121 particles=317"
+  },
+  {
+   "name": "파티클은 단일 배치로 렌더",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "파티클 풀 여유: 최악 상황에서도 85% 이하 사용",
+   "ok": true,
+   "extra": "317/480"
+  },
+  {
+   "name": "픽셀 예산: 어떤 화면에서도 2.4MP 이하",
+   "ok": true,
+   "extra": "worst=2.30MP"
+  },
+  {
+   "name": "MSAA 비활성 (전체화면 대역폭 절감)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "접지 그림자: 액터/구조물마다 생성",
+   "ok": true,
+   "extra": "blobs=17"
+  },
+  {
+   "name": "블룸: 켜면 후처리 4패스 추가 (bright+blur2+composite)",
+   "ok": true,
+   "extra": "on=74 off=70"
+  },
+  {
+   "name": "블룸: 1/4 해상도로 처리",
+   "ok": true,
+   "extra": "505x284"
+  },
+  {
+   "name": "블룸: 저사양 모드에서 자동 비활성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "컨텍스트 재초기화 후 블룸 타깃 재생성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "탑 층계: 방마다 층수가 증가",
+   "ok": true,
+   "extra": "최상층 63층"
+  },
+  {
+   "name": "탑 층계: 표시 구역과 실제 테마 일치",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "탑 층계: 4개 구역 모두 사용",
+   "ok": true,
+   "extra": "{\"lower\":2,\"mid\":2,\"upper\":2,\"spire\":1}"
+  },
+  {
+   "name": "탑 층계: 첨탑까지 도달",
+   "ok": true,
+   "extra": "72층 첨탑"
+  },
+  {
+   "name": "탑 배경: 실제로 그려짐",
+   "ok": true,
+   "extra": "backdrop=20 calls"
+  },
+  {
+   "name": "상승 연출: 카메라가 아래에서 올라와 복귀",
+   "ok": true,
+   "extra": "dip=-5.32 end=0.000"
+  },
+  {
+   "name": "셰이더 프로그램 바인딩: 허브 메시가 모두 PBR 로 렌더",
+   "ok": true,
+   "extra": "{}"
+  },
+  {
+   "name": "셰이더 프로그램 바인딩: 전투 중에도 유지",
+   "ok": true,
+   "extra": "{}{}"
+  },
+  {
+   "name": "허브에 바닥이 실제로 그려짐",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "입력 우선순위: 공격 홀드 중에도 스킬이 나간다",
+   "ok": true,
+   "extra": "12/12"
+  },
+  {
+   "name": "입력 우선순위: 공격 홀드 중에도 궁극기가 나간다",
+   "ok": true,
+   "extra": "12/12"
+  },
+  {
+   "name": "우클릭이 공격을 발동시키지 않는다",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "연출 밀도: 히트스톱이 프레임의 12% 이하",
+   "ok": true,
+   "extra": "6%"
+  },
+  {
+   "name": "연출 밀도: 연속 정지 4프레임 이하",
+   "ok": true,
+   "extra": "3frames"
+  },
+  {
+   "name": "연출 밀도: 체감 화면흔들림 25% 이하",
+   "ok": true,
+   "extra": "11%"
+  },
+  {
+   "name": "연출 밀도: 흔들림 진폭 상한 준수",
+   "ok": true,
+   "extra": "0.115"
+  }
+ ]
+}

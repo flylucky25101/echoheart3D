@@ -1,0 +1,362 @@
+{
+ "total": 71,
+ "passed": 71,
+ "failed": 0,
+ "results": [
+  {
+   "name": "WebGL2 컨텍스트 생성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "셰이더 컴파일/링크 (pbr)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "셰이더 컴파일/링크 (unlit)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "셰이더 컴파일/링크 (sky)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "모든 메시 GPU 업로드",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "메시 데이터 존재 (20종)",
+   "ok": true,
+   "extra": "20종"
+  },
+  {
+   "name": "정점/노멀/UV 개수 일치",
+   "ok": true,
+   "extra": "0건 불일치"
+  },
+  {
+   "name": "인덱스 범위 유효",
+   "ok": true,
+   "extra": "0건 초과"
+  },
+  {
+   "name": "메시 NaN 없음",
+   "ok": true,
+   "extra": "0건"
+  },
+  {
+   "name": "와인딩과 노멀 방향 일치",
+   "ok": true,
+   "extra": "0개 삼각형 불일치"
+  },
+  {
+   "name": "뒤집힌(내부향) 파트 없음",
+   "ok": true,
+   "extra": "0개"
+  },
+  {
+   "name": "메시 통계",
+   "ok": true,
+   "extra": "106 파트 / 9722 삼각형"
+  },
+  {
+   "name": "리그가 바닥 위에 정확히 서 있음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "플레이어 신장 (발~머리)",
+   "ok": true,
+   "extra": "0.02 ~ 1.78 유닛"
+  },
+  {
+   "name": "텍스처 매니페스트 유효",
+   "ok": true,
+   "extra": "76개 항목"
+  },
+  {
+   "name": "모든 재질의 필수 텍스처 존재",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "모든 재질에 내장 텍스처(data URI) 존재 — file:// 대응",
+   "ok": true,
+   "extra": "65개 내장"
+  },
+  {
+   "name": "내장 텍스처가 유효한 data URI 형식",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "file:// 에서 로더가 내장 텍스처를 선택",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "기본 저장 생성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "저장 왕복(export/import)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "잘못된 JSON 안전 처리",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "NaN/음수/범위이탈 값 정규화",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "존재하지 않는 업그레이드 ID 제거",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "저장 마이그레이션 (v1 -> 현재)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "설정 범위 클램프",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "seeded random 재현성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "방 생성: 첫 방은 항상 일반 전투",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "방 생성: 특수방 연속 등장 없음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "방 생성: 총 7방 구성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적 스폰 위치: 벽 밖/플레이어 위 생성 없음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "잔향 제안 중복 없음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "잔향 최대 중첩 초과 불가",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "영구 업그레이드 상한",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "결정 부족 시 구매 거부",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "사망 적응 상한 (3단계)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적응이 피해를 실제로 감소",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "첫 방 사망도 최소 보상 지급",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "생명 코어 최대 2개 제한",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "무기 데이터 3종 + 메시 존재",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적 데이터 6종 + 메시 존재",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "엘리트 속성 3종",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "잔향 18종 이상 · ID 고유 · 설명 동작",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "영구 업그레이드 12종 이상 · ID 고유",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "보스 3단계 정의",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "애니메이션 클립 (플레이어/적/보스)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "애니메이션 클립 NaN 없음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "행렬 수학 정확도 (invert/perspective/lookAt)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "월드/플레이어 생성",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "생명 코어 1개 소비 후 50% 체력 부활",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "무적 시간 중 피해 무시",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "생명 코어 중복 소비 없음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "보스 단계 전환 중복 없음 · 승리 1회 처리",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적 6종 모두 예고 후 실제로 공격한다",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "예고가 매 프레임 재생성되지 않는다",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "행동 상태(tell/attack/recover)는 이동 상태에 덮어써지지 않는다",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적이 아레나 밖으로 나가지 않음 (강한 넉백에도)",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "죽어가는 적도 벽 밖으로 새지 않음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "플레이어가 지형물을 통과하지 못함",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "적도 지형물을 통과하지 못함",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "지형물 충돌 반경이 정의되어 있음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "죽은 적은 추가 피해를 받지 않음",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "UI 초기화 및 버튼 동작",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "모든 화면 빌더가 예외 없이 실행",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "텍스처 실제 로딩",
+   "ok": true,
+   "extra": "76개 성공 (내장 0 / 파일 76)"
+  },
+  {
+   "name": "모든 재질이 실제 텍스처로 업로드됨 (흰 박스 회귀 방지)",
+   "ok": true,
+   "extra": "16개 재질"
+  },
+  {
+   "name": "무기 상성: 저항값 유효",
+   "ok": true,
+   "extra": ""
+  },
+  {
+   "name": "무기 상성: 무기별 저항 합계 동일 (총합 편향 없음)",
+   "ok": true,
+   "extra": "slash=6.00 pierce=6.00 impact=6.00"
+  },
+  {
+   "name": "무기 상성: 무기마다 강함2/약함2 대칭",
+   "ok": true,
+   "extra": "slash 강2/약2 pierce 강2/약2 impact 강2/약2"
+  },
+  {
+   "name": "보스 페이즈 저항: 무기별 합계 동일",
+   "ok": true,
+   "extra": "3.00/3.00/3.00"
+  },
+  {
+   "name": "모든 무기에 데미지 타입 지정",
+   "ok": true,
+   "extra": ""
+  }
+ ]
+}
