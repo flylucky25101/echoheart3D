@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#05070a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>ECHOHEART: 아르카의 마지막 밤</title>
+<link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="gl"></canvas>
+
+  <!-- ===== combat HUD ===== -->
+  <div id="hud" class="hidden">
+    <div class="hud-top">
+      <div class="hud-left">
+        <div class="bar hp"><div class="fill" id="hpFill"></div><span id="hpText">100 / 100</span></div>
+        <div class="cores" id="cores"></div>
+        <div class="bar ult"><div class="fill" id="ultFill"></div><span>궁극기</span></div>
+      </div>
+      <div class="hud-mid">
+        <div id="roomInfo" class="room-info">방 1 / 7</div>
+        <div id="shards" class="shards">시간 파편 0</div>
+      </div>
+      <div class="hud-right">
+        <button id="btnPause" class="ico-btn" aria-label="일시정지">II</button>
+      </div>
+    </div>
+    <div id="bossBar" class="boss-bar hidden">
+      <div class="boss-name"><span id="bossName">크로노보어</span><span id="bossPhase" class="phase">1단계</span></div>
+      <div class="bar boss"><div class="fill" id="bossFill"></div></div>
+    </div>
+    <div id="combo" class="combo hidden"></div>
+    <div id="hint" class="hint hidden"></div>
+
+    <!-- mobile controls -->
+    <div id="touchUI">
+      <div id="joyBase" class="joy-base hidden"><div id="joyKnob" class="joy-knob"></div></div>
+      <div class="action-pad">
+        <button id="btnSkill" class="act skill" aria-label="스킬"><span class="lbl">스킬</span><svg class="cd" viewBox="0 0 36 36"><circle class="cd-ring" cx="18" cy="18" r="16"></circle></svg></button>
+        <button id="btnDash" class="act dash" aria-label="대시"><span class="lbl">대시</span><svg class="cd" viewBox="0 0 36 36"><circle class="cd-ring" cx="18" cy="18" r="16"></circle></svg></button>
+        <button id="btnAttack" class="act attack" aria-label="공격"><span class="lbl">공격</span></button>
+        <button id="btnUlt" class="act ult" aria-label="궁극기"><span class="lbl">궁극</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== overlay screens (built by ui.js) ===== -->
+  <div id="overlay"></div>
+  <div id="toast" class="toast hidden"></div>
+  <div id="portrait" class="portrait hidden">
+    <div class="portrait-box">
+      <h2>가로 화면 권장</h2>
+      <p>기기를 가로로 돌리면 더 넓은 시야로 플레이할 수 있습니다.<br>세로에서도 타이틀과 설정은 사용할 수 있습니다.</p>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/namespace.js" defer></script>
+<script src="scripts/config.js" defer></script>
+<script src="scripts/math.js" defer></script>
+<script src="scripts/rng.js" defer></script>
+<script src="scripts/asset-manifest.js" defer></script>
+<script src="scripts/texture-data.js" defer></script>
+<script src="scripts/texture-loader.js" defer></script>
+<script src="scripts/mesh-data-player.js" defer></script>
+<script src="scripts/mesh-data-enemies.js" defer></script>
+<script src="scripts/mesh-data-boss.js" defer></script>
+<script src="scripts/mesh-data-weapons.js" defer></script>
+<script src="scripts/mesh-data-environments.js" defer></script>
+<script src="scripts/mesh-data-imported.js" defer></script>
+<script src="scripts/imported-materials.js" defer></script>
+<script src="scripts/sprite-view.js" defer></script>
+<script src="scripts/sprite-embedded.js" defer></script>
+<script src="scripts/sprite-imported.js" defer></script>
+<script src="scripts/shaders.js" defer></script>
+<script src="scripts/renderer.js" defer></script>
+<script src="scripts/animation.js" defer></script>
+<script src="scripts/camera.js" defer></script>
+<script src="scripts/audio.js" defer></script>
+<script src="scripts/save.js" defer></script>
+<script src="scripts/input.js" defer></script>
+<script src="scripts/progression.js" defer></script>
+<script src="scripts/ui.js" defer></script>
+<script src="scripts/entities.js" defer></script>
+<script src="scripts/combat.js" defer></script>
+<script src="scripts/rooms.js" defer></script>
+<script src="scripts/scenes.js" defer></script>
+<script src="scripts/selftest.js" defer></script>
+<script src="scripts/game.js" defer></script>
+</body>
+</html>
