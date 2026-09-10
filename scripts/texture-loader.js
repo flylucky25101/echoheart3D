@@ -2,25 +2,28 @@
 // Loads textures as <img> (no fetch).
 // IMPORTANT: under file:// Chrome treats local images as cross-origin, so
 // gl.texImage2D(img) throws SecurityError and every surface turns flat white.
-// We therefore prefer the embedded data: URIs (same-origin, always uploadable)
-// and use the real files when served over http(s), where they are higher-res.
+// The embedded data: URIs are same-origin and always uploadable, so they are
+// what the game actually ships with.
+//
+// The embedded copy is preferred on EVERY protocol, not just file://. This used
+// to try entry.path first whenever served over http(s), on the assumption that
+// a deployed build would carry higher-res originals in assets/. That assumption
+// stopped being true once assets/ became build-time-only input: the deploy has
+// no assets/ directory, so every single texture 404'd and then silently fell
+// back - 76 failed requests on every page load, for bytes already in the page.
 (function () {
   var EH = window.EchoHeart;
-
-  function isFileProtocol() {
-    try { return window.location.protocol === 'file:'; } catch (e) { return true; }
-  }
 
   function TextureLoader() {
     this.images = {}; this.status = {};
     this.total = 0; this.done = 0; this.failed = [];
     this.usedEmbedded = 0; this.usedFile = 0;
-    this.embeddedMode = isFileProtocol();
   }
 
   TextureLoader.prototype.srcFor = function (key, entry) {
     var data = EH.TextureData && EH.TextureData[key];
-    if (this.embeddedMode && data) return { src: data, embedded: true };
+    if (data) return { src: data, embedded: true };
+    // no embedded copy for this key - the file on disk is the only source
     return { src: entry.path, embedded: false };
   };
 
@@ -51,11 +54,11 @@
       }
       img.onload = function () { finish(img.naturalWidth > 0); };
       img.onerror = function () {
-        // file missing over http(s)? fall back to the embedded copy
-        var data = EH.TextureData && EH.TextureData[key];
-        if (!triedFallback && data && !pick.embedded) {
-          triedFallback = true; pick = { src: data, embedded: true };
-          img.src = data; return;
+        // Embedded copy corrupt or absent? Try the file on disk once. This is
+        // the reverse of the old order, matching the reversal in srcFor.
+        if (!triedFallback && pick.embedded && entry.path) {
+          triedFallback = true; pick = { src: entry.path, embedded: false };
+          img.src = entry.path; return;
         }
         finish(false);
       };
