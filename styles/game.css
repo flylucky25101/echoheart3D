@@ -25,10 +25,12 @@ canvas#gl{position:absolute;inset:0;width:100%;height:100%;display:block;touch-a
 img,canvas{-webkit-user-drag:none;user-drag:none;}
 
 /* ================= panels & buttons ================= */
+/* The gradient below used to sit on top of a panel_albedo.webp texture. That
+   file lives in assets/, which is build-time input and is not deployed, so on a
+   real host it only ever produced a 404 - and at .96/.98 alpha the gradient was
+   hiding it almost completely anyway. */
 .panel{
-  background:
-    linear-gradient(180deg, rgba(20,30,40,.96), rgba(8,12,17,.98)),
-    url('../assets/textures/ui/panel_albedo.webp');
+  background:linear-gradient(180deg, rgba(20,30,40,.96), rgba(8,12,17,.98));
   background-size:cover;
   border:var(--panel-bd);
   border-radius:14px;
@@ -90,8 +92,11 @@ p.small{font-size:13px;color:var(--text-dim);line-height:1.65;}
 .card .ctag{font-size:11px;padding:2px 7px;border-radius:20px;border:1px solid currentColor;opacity:.9;}
 .card .cdesc{font-size:13px;color:var(--text-dim);line-height:1.55;}
 .card .cmeta{margin-top:8px;font-size:12px;color:var(--cyan);}
+/* background-image is injected at runtime from the embedded ui_icons data URI
+   (see UI.bindIconAtlas). Hard-coding an assets/ path here 404'd on every deploy
+   and left every echo / upgrade / weapon card with a blank icon. */
 .icon{width:34px;height:34px;flex:0 0 34px;border-radius:8px;background-size:cover;
-  background-image:url('../assets/textures/ui/icons.png');image-rendering:auto;
+  image-rendering:auto;
   border:1px solid rgba(255,255,255,.12);}
 
 /* stats + settings rows */
