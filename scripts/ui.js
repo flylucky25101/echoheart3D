@@ -23,7 +23,21 @@
 
   var UI = EH.UI = {
     overlay: null, hud: null, current: null, modal: false, _toastT: 0,
+    // Point .icon at the embedded atlas. The stylesheet cannot reach the data
+    // URI itself, and the assets/ path it used to hard-code is not deployed, so
+    // this is what keeps icons from silently rendering blank.
+    bindIconAtlas: function () {
+      var src = EH.TextureData && EH.TextureData.ui_icons;
+      if (!src || this._iconBound) return;
+      this._iconBound = true;
+      try {
+        var s = document.createElement('style');
+        s.textContent = '.icon{background-image:url("' + src + '")}';
+        document.head.appendChild(s);
+      } catch (e) { EH.warn('아이콘 아틀라스 연결 실패:', e); }
+    },
     init: function () {
+      this.bindIconAtlas();
       this.overlay = document.getElementById('overlay');
       this.hud = document.getElementById('hud');
       this.toastEl = document.getElementById('toast');
